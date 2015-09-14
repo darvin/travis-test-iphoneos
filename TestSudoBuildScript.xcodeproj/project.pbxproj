@@ -253,7 +253,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if curl google.com ; then\n    echo \"NETWORK IS STILL ENABLED!\"\n    exit 10\nelse\n    echo \"NETWORK DISABLED AS EXPECTED\"\n    exit 0\n\nfi";
+			shellScript = "if curl --connect-timeout 2 google.com ; then\n    echo \"NETWORK IS STILL ENABLED!\"\n    exit 10\nelse\n    echo \"NETWORK DISABLED AS EXPECTED\"\n    exit 0\n\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
