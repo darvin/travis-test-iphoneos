@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D0EF5592-90DC-4CFB-8F2D-E140665D6F83</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TestSudoBuildScript</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F88C75562F8A1DE3A64AC53078E3A759AAAD2B69</key>
+		<string>github.com:darvin/travis-test-osx-sudo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TestSudoBuildScript.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F88C75562F8A1DE3A64AC53078E3A759AAAD2B69</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:darvin/travis-test-osx-sudo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F88C75562F8A1DE3A64AC53078E3A759AAAD2B69</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F88C75562F8A1DE3A64AC53078E3A759AAAD2B69</string>
+			<key>IDESourceControlWCCName</key>
+			<string>travis-test-osx-sudo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

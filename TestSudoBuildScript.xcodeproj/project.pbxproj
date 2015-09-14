@@ -36,6 +36,7 @@
 		57CFF8D31BA780F300413B2A /* TestSudoBuildScriptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestSudoBuildScriptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57CFF8D81BA780F300413B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57CFF8D91BA780F300413B2A /* TestSudoBuildScriptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSudoBuildScriptTests.swift; sourceTree = "<group>"; };
+		57CFF8E71BA7827900413B2A /* dummynet.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = dummynet.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +60,7 @@
 		57CFF8B51BA780F300413B2A = {
 			isa = PBXGroup;
 			children = (
+				57CFF8E71BA7827900413B2A /* dummynet.sh */,
 				57CFF8C01BA780F300413B2A /* TestSudoBuildScript */,
 				57CFF8D61BA780F300413B2A /* TestSudoBuildScriptTests */,
 				57CFF8BF1BA780F300413B2A /* Products */,
@@ -139,6 +141,9 @@
 				57CFF8CF1BA780F300413B2A /* Sources */,
 				57CFF8D01BA780F300413B2A /* Frameworks */,
 				57CFF8D11BA780F300413B2A /* Resources */,
+				57CFF8E31BA781C400413B2A /* Disable Network */,
+				57CFF8E51BA781E000413B2A /* Try to fetch google.com */,
+				57CFF8E41BA781D500413B2A /* Enable Network */,
 			);
 			buildRules = (
 			);
@@ -206,6 +211,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57CFF8E31BA781C400413B2A /* Disable Network */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Disable Network";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${SRCROOT}\"\nsudo ./dummynet.sh enable\n\nsleep 3";
+		};
+		57CFF8E41BA781D500413B2A /* Enable Network */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Enable Network";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${SRCROOT}\"\nsudo  ./dummynet.sh disable";
+		};
+		57CFF8E51BA781E000413B2A /* Try to fetch google.com */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Try to fetch google.com";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if curl google.com ; then\n    echo \"NETWORK IS STILL ENABLED!\"\n    exit 10\nelse\n    echo \"NETWORK DISABLED AS EXPECTED\"\n    exit 0\n\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		57CFF8BA1BA780F300413B2A /* Sources */ = {
@@ -411,6 +461,7 @@
 				57CFF8DF1BA780F300413B2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57CFF8E01BA780F300413B2A /* Build configuration list for PBXNativeTarget "TestSudoBuildScriptTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +470,7 @@
 				57CFF8E21BA780F300413B2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
