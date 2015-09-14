@@ -1,4 +1,4 @@
 language: objective-c
 xcode_project: TestSudoBuildScript.xcodeproj
-xcode_scheme: TestSudoBuildScriptTests
+xcode_scheme: TestSudoBuildScript
 sudo: true
