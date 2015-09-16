@@ -15,23 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "57CFF8BD1BA780F300413B2A"
-               BuildableName = "TestSudoBuildScript.app"
-               BlueprintName = "TestSudoBuildScript"
-               ReferencedContainer = "container:TestSudoBuildScript.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "57CFF8D21BA780F300413B2A"
-               BuildableName = "TestSudoBuildScriptTests.xctest"
-               BlueprintName = "TestSudoBuildScriptTests"
-               ReferencedContainer = "container:TestSudoBuildScript.xcodeproj">
+               BuildableName = "TestIphone.app"
+               BlueprintName = "TestIphone"
+               ReferencedContainer = "container:TestIphone.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -42,24 +28,14 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "57CFF8D21BA780F300413B2A"
-               BuildableName = "TestSudoBuildScriptTests.xctest"
-               BlueprintName = "TestSudoBuildScriptTests"
-               ReferencedContainer = "container:TestSudoBuildScript.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "57CFF8BD1BA780F300413B2A"
-            BuildableName = "TestSudoBuildScript.app"
-            BlueprintName = "TestSudoBuildScript"
-            ReferencedContainer = "container:TestSudoBuildScript.xcodeproj">
+            BuildableName = "TestIphone.app"
+            BlueprintName = "TestIphone"
+            ReferencedContainer = "container:TestIphone.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "57CFF8BD1BA780F300413B2A"
-            BuildableName = "TestSudoBuildScript.app"
-            BlueprintName = "TestSudoBuildScript"
-            ReferencedContainer = "container:TestSudoBuildScript.xcodeproj">
+            BuildableName = "TestIphone.app"
+            BlueprintName = "TestIphone"
+            ReferencedContainer = "container:TestIphone.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "57CFF8BD1BA780F300413B2A"
-            BuildableName = "TestSudoBuildScript.app"
-            BlueprintName = "TestSudoBuildScript"
-            ReferencedContainer = "container:TestSudoBuildScript.xcodeproj">
+            BuildableName = "TestIphone.app"
+            BlueprintName = "TestIphone"
+            ReferencedContainer = "container:TestIphone.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -1,5 +1,2 @@
 language: objective-c
-xcode_project: TestSudoBuildScript.xcodeproj
-xcode_scheme: TestSudoBuildScript
-script: xctool -project TestSudoBuildScript.xcodeproj -scheme TestSudoBuildScript build  CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
-sudo: true
+script: xctool -project TestIphone.xcodeproj -scheme TestIphone build  -sdk iphoneos
