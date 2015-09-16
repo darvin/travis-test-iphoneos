@@ -10,9 +10,6 @@ security set-keychain-settings -t 3600 -u $KEY_CHAIN
 wget https://developer.apple.com/certificationauthority/AppleWWDRCA.cer
 security import AppleWWDRCA.cer  -k  ~/Library/Keychains/$KEY_CHAIN -T /usr/bin/codesign
 security import certificate.cer  -k  ~/Library/Keychains/$KEY_CHAIN -T /usr/bin/codesign
-echo "PASSWORD: " $KEY_PASSWORD
 security import certificate.p12  -k  ~/Library/Keychains/$KEY_CHAIN  -P $KEY_PASSWORD -T /usr/bin/codesign
-echo $?
-echo "certificate key imported"
 mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
 cp profile.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/
