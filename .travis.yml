@@ -1,2 +1,8 @@
 language: objective-c
-script: xctool -project TestIphone.xcodeproj -scheme TestIphone build  -sdk iphoneos
+script: xctool -project TestIphone.xcodeproj -scheme TestIphone build  -sdk iphoneos CODE_SIGN_IDENTITY="iPhone Developer" PROVISIONING_PROFILE="50b33cac-87ca-4434-ba91-1d23a2f26840"
+env:
+  global:
+    secure: pgSm2zmka0Uv8tYLpOFSOIGL/WBUM1H/mJJfWJHQUvx7CjrfxkzPL3oNPUor0Lwml/aEfLOatMr/xeffrxnBXlOvCP345VRKrQ89Ipb38r4QCPNMfRru+UQBgKFoYVoFfXg5J5j9rdjxBucocegkO+XgFIG4U/xMNrmKRPFTMDeQdyqRcZi10tVslZK7KTCJN1ZGtZ2TafJvjLQx9sxwmxSm9Hht6srUPMyEyqhq/4tVvZWDPP43hmSh3kPfcqWBmi4hdbt0cBYy9a8EFBiS0zBGDgyRlOX/3vcyntpahY3P4YlIWoz37jOy88P1u2cW1guSqVET6TRTwwBOA8+zH4UnxPFnjTjJHdM6KOnXoamx8n0qN33HxdNf6Dp66D5LdKW4TjHiJqlw6vHJGCwsg4TFU12xWngz4Zgr7bYLnuzZDcVdE0+n/XkiyQ8zGlyZBwHnyOJ95M9lcDvyCseH9yJ+eatsFl3iu50gbDvmgjN6dGyk6JuJ5X0jybgzIOsjOsV865gk8XByJ0aE1LvrwbbDrdvBm+7CfaXlybX0n4Vpfubqm+iUepGQhgdVccSH6V1rpyli3QofiXaN4l1xWkBV1iAM5w3/SNhHwJpDhjL6UMnoVCyDQyWgKLmH2EVDDl+YMFKZIzlmnGKe4PcKd8gocldNkaONGUuhnNBp4ZM=
+before_install:
+- openssl aes-256-cbc -K $encrypted_5e75db2e2fa3_key -iv $encrypted_5e75db2e2fa3_iv
+  -in .travis/secrets.tar.enc -out .travis/secrets.tar -d
